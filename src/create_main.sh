@@ -45,6 +45,8 @@ done
 echo "" >> ${MAIN_JS}
 echo "/*global exports*/" >> ${MAIN_JS}
 
+echo "export {" >> ${MAIN_JS}
+
 for FILE in ${FILES}; do
   CLASS=${FILE##*/}
   CLASS=${CLASS%.js}
@@ -55,9 +57,10 @@ for FILE in ${FILES}; do
     -a "${CLASS}" != "constants" \
     -a "${CLASS##*.}" != "web" \
     -a "${CATEGORY}" != "third_party" ]; then
-    echo "exports.${CLASS} = ${CLASS}" >> ${MAIN_JS}
+    echo "${CLASS}," >> ${MAIN_JS}
   fi
 done
+echo "}" >> ${MAIN_JS}
 
 echo "" >> ${MAIN_JS}
 echo "// constants" >> ${MAIN_JS}

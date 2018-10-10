@@ -1,26 +1,26 @@
 /*global exports*/
 
 // 
-exports.kCAFillModeRemoved = 'removed'
-exports.kCAFillModeForwards = 'forwards'
-exports.kCAFillModeBackwards = 'backwards'
-exports.kCAFillModeBoth = 'both'
+export const kCAFillModeRemoved = 'removed'
+export const kCAFillModeForwards = 'forwards'
+export const kCAFillModeBackwards = 'backwards'
+export const kCAFillModeBoth = 'both'
 
 // 
-exports.kCAMediaTimingFunctionLinear = 'linear'
-exports.kCAMediaTimingFunctionEaseIn = 'easeIn'
-exports.kCAMediaTimingFunctionEaseOut = 'easeOut'
-exports.kCAMediaTimingFunctionEaseInEaseOut = 'easeInEaseOut'
-exports.kCAMediaTimingFunctionDefault = 'default'
+export const kCAMediaTimingFunctionLinear = 'linear'
+export const kCAMediaTimingFunctionEaseIn = 'easeIn'
+export const kCAMediaTimingFunctionEaseOut = 'easeOut'
+export const kCAMediaTimingFunctionEaseInEaseOut = 'easeInEaseOut'
+export const kCAMediaTimingFunctionDefault = 'default'
 
 // Value calculation modes
-exports.kCAAnimationLinear = 'linear'
-exports.kCAAnimationDiscrete = 'discrete'
-exports.kCAAnimationPaced = 'paced'
-exports.kCAAnimationCubic = 'cubic'
-exports.kCAAnimationCubicPaced = 'cubicPaced'
+export const kCAAnimationLinear = 'linear'
+export const kCAAnimationDiscrete = 'discrete'
+export const kCAAnimationPaced = 'paced'
+export const kCAAnimationCubic = 'cubic'
+export const kCAAnimationCubicPaced = 'cubicPaced'
 
 // Rotation Mode Values
-exports.kCAAnimationRotateAuto = 'auto'
-exports.kCAAnimationRotateAutoReverse = 'autoReverse'
+export const kCAAnimationRotateAuto = 'auto'
+export const kCAAnimationRotateAutoReverse = 'autoReverse'
 
